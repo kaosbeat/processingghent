@@ -10,10 +10,11 @@ class Particle {
   
   }
 
-  Particle(float x, float y) {
+  Particle(float x, float y, float a, float v) {
     this.x = x;
     this.y = y;
-    speed = 1.0; // no need for "this" reference, beacause not referenced in def
-    this.angle = 0; // it is allowed though
-
+    speed = v; // no need for "this" reference, beacause not referenced in def
+    this.angle = a; // it is allowed though
+    spin=0.0;
+  }
 }
