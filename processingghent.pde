@@ -51,7 +51,7 @@ void update () {
 
 void render() {
  noFill();
-stroke(0,50);
+stroke(234,4,56,10);
 for (int i = 0; i<num; i++){ 
 ellipse(x[i],y[i],psize[i],psize[i]);
 }
