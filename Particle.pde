@@ -6,6 +6,10 @@ class Particle {
   float spin;
   float radius;
 
+  Particle() {
+  
+  }
+
   Particle(float x, float y) {
     this.x = x;
     this.y = y;
