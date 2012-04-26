@@ -26,8 +26,8 @@ class Particle {
   }
   
   void render() {
-  noFill();
-  stroke(234,4,56,10);
-  ellipse(x,y,20*speed,20*speed);
+    noFill();
+    stroke(234,4,56,10);
+    ellipse(x,y,20*speed,20*speed);
   }
 }
