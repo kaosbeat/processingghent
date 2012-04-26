@@ -7,9 +7,11 @@ class Particle {
   float radius;
 
   Particle() {
-    this.x = 0;
-    this.y = 0;
+    this.x = 300.0;
+    this.y = 300.0;
     this.angle = random(360.0);
+    this.speed = 1.0;
+    this.spin=0.0;
   }
 
   Particle(float x, float y, float a, float v) {
@@ -17,7 +19,7 @@ class Particle {
     this.y = y;
     speed = v; // no need for "this" reference, beacause not referenced in def
     this.angle = a; // it is allowed though
-    spin=0.0;
+    
   }
   
   void update() {

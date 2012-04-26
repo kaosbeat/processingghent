@@ -22,7 +22,7 @@ void initParticle() {
   num=50;
   particles= new Particle[num];
   for(int i=0;i<num;i++) {
-    particles[i]=new Particle(400.0,400.0, random(360.0),1.0);
+    particles[i]=new Particle();
   }
 }
 
