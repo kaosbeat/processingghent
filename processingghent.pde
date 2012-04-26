@@ -38,8 +38,8 @@ void update () {
 
 
 void render() {
- noFill();
-stroke(234,4,56,10);
-ellipse(p.x,p.y,40,40);
+  noFill();
+  stroke(234,4,56,10);
+  ellipse(p.x,p.y,40,40);
 
 }
