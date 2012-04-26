@@ -1,6 +1,7 @@
 //GOF design patterns
-Particle p;
 
+Particle[] particles;
+int num;
 
 void setup () {
  size(600,600);  
@@ -18,17 +19,24 @@ void draw() {
 
 
 void initParticle() {
-  //num=50;
-  p=new Particle(400.0,400.0, random(360.0),1.0);
+  num=50;
+  particles= new Particle[num];
+  for(int i=0;i<num;i++) {
+    particles[i]=new Particle(400.0,400.0, random(360.0),1.0);
+  }
 }
 
 
 
 void update () {
-  p.update();  
+  for(Particle p:particles) {
+    p.update(); 
+  } 
 }
 
 
 void render() {
-  p.render();
+  for(Particle p:particles) {
+    p.render(); 
+  } 
 }

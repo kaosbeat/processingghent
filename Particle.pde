@@ -7,7 +7,9 @@ class Particle {
   float radius;
 
   Particle() {
-  
+    this.x = 0;
+    this.y = 0;
+    this.angle = random(360.0);
   }
 
   Particle(float x, float y, float a, float v) {
